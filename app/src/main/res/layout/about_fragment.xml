@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="fragment"
+            type="app.sample.adapters.ui.about.AboutFragment" />
+        <variable
+            name="model"
+            type="app.sample.adapters.ui.about.AboutViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:colorBackground">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:title="@string/about"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:titleTextAppearance="@style/TextTitle" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="@dimen/margin_medium"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toTopOf="@+id/text_version"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/text_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:text='@{String.format("%1$s, ver. %2$s", @string/app_name, model.appVersion)}'
+            android:textColor="?colorAccent"
+            android:textAppearance="@style/TextTitle"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="AppName, ver. 1.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_my_server"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:onClick="@{(v)-> fragment.onButtonClick(@id/button_my_server)}"
+            android:text="@string/my_server"
+            android:textAppearance="@style/TextPrimary"
+            android:textColor="?android:textColorSecondary"
+            app:cornerRadius="@dimen/card_corners"
+            app:strokeWidth="@dimen/stroke_default"
+            app:icon="@drawable/vd_cloud"
+            app:iconPadding="@dimen/margin_medium"
+            app:iconTint="?android:textColorSecondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_github"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:onClick="@{(v)-> fragment.onButtonClick(@id/button_github)}"
+            android:text="@string/source_code"
+            android:textAppearance="@style/TextPrimary"
+            android:textColor="?android:textColorSecondary"
+            app:cornerRadius="@dimen/card_corners"
+            app:strokeWidth="@dimen/stroke_default"
+            app:icon="@drawable/vd_github"
+            app:iconPadding="@dimen/margin_medium"
+            app:iconTint="?android:textColorSecondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_my_server" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_share"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:onClick="@{(v)-> fragment.onButtonClick(@id/button_share)}"
+            android:text="@string/share"
+            android:textAppearance="@style/TextPrimary"
+            android:textColor="?android:textColorSecondary"
+            app:cornerRadius="@dimen/card_corners"
+            app:strokeWidth="@dimen/stroke_default"
+            app:icon="@drawable/vd_share"
+            app:iconPadding="@dimen/margin_medium"
+            app:iconTint="?android:textColorSecondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_github" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

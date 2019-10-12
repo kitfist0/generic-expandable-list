@@ -1,0 +1,8 @@
+<resources>
+    <string name="about">About</string>
+    <string name="app_name">AppSample</string>
+    <string name="my_server">My JSON Server</string>
+    <string name="sample_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet lectus in arcu varius semper. Proin vestibulum arcu tellus, a facilisis elit tristique non. Integer aliquam, urna sed aliquet pellentesque, metus nulla aliquet dui, at laoreet nisl turpis sed risus. Phasellus rhoncus iaculis neque vel porta. Etiam consequat urna ut lorem tincidunt finibus ac eu tortor. Curabitur tempus lacus eu metus bibendum lobortis. Proin vulputate dolor id porta vulputate. Nunc in fringilla nisi. Mauris quis hendrerit velit.</string>
+    <string name="source_code">Source code</string>
+    <string name="share">Share with friends</string>
+</resources>
