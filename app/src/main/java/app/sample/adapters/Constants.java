@@ -3,7 +3,7 @@ package app.sample.adapters;
 public class Constants {
 
     // API
-    public static final String BASE_URL = "https://my-json-server.typicode.com/kitfist0/sampleusers/";
+    public static final String BASE_URL = "https://my-json-server.typicode.com/kitfist0/generic-expandable-list/";
 
     // Other
     public static final String GITHUB_LINK = "https://github.com/kitfist0/generic-expandable-list";
