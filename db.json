@@ -1,0 +1,14 @@
+{ 
+  "users": [
+    {"id": 0,"icon": "https://randomuser.me/api/portraits/men/32.jpg", "name": "Leo Gill","bday": "Oct. 20","city": "London"}, 
+    {"id": 1,"icon": "https://randomuser.me/api/portraits/men/91.jpg", "name": "Wyatt Morris","bday": "Aug. 01","city": "London"},
+    {"id": 2,"icon": "https://randomuser.me/api/portraits/women/44.jpg", "name": "June Cha","bday": "Apr. 12","city": "Manchester"},
+    {"id": 3,"icon": "https://randomuser.me/api/portraits/women/68.jpg", "name": "Iida Niskanen","bday": "Mar. 21","city": "Liverpool"},
+    {"id": 4,"icon": "https://randomuser.me/api/portraits/men/78.jpg", "name": "Ferdinand Karl","bday": "Dec. 05","city": "London"},
+    {"id": 5,"icon": "https://randomuser.me/api/portraits/women/2.jpg", "name": "Mia Denys","bday": "Nov. 17","city": "Birmingham"},
+    {"id": 6,"icon": "https://randomuser.me/api/portraits/men/17.jpg", "name": "Harold Adams","bday": "Sep. 01","city": "Portsmouth"},
+    {"id": 7,"icon": "https://randomuser.me/api/portraits/men/58.jpg", "name": "Leo Fritz","bday": "Jun. 30","city": "Nottingham"},
+    {"id": 8,"icon": "https://randomuser.me/api/portraits/women/9.jpg", "name": "Laura Rasmussen","bday": "Feb. 28","city": "Manchester"},
+    {"id": 9,"icon": "https://randomuser.me/api/portraits/men/60.jpg", "name": "Topias Kantola","bday": "May. 15","city": "Wolverhampton"}
+  ]
+}
